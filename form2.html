@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<title> FORM DETAILS </title>
+<style>
+.casual{border:10px solid yellow;background-color:lightyellow;padding:10px;width:720px}
+.zappy{display:inline-block;width:180px;text-align:right;text-align:top}
+#contact{width:auto}
+#gender{width:auto}
+#height{text-align:center}
+#salary{text-align:center}
+#address{width:360px;height:50px}
+label:hover{font-size:40px}
+input:hover{font-size:40px}
+</style>
+</head>
+
+<body>
+<form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post" enctype="multipart/form-data">
+<h1>Please Enter Your Details For Our Dating Website!</h1>
+
+<fieldset class="casual">
+<legend>Your Face</legend>
+<label for="image" class="zappy">Your image:</label>
+<input type="file" id="preview" name="fileToUpload" required><br>
+<label for="image preview" class="zappy">Image Preview:</label>
+</fieldset><br>
+
+<fieldset class="casual">
+<legend>Your General Details</legend>
+<label for="name" class="zappy">Name:</label>
+<input type="text" id="name" name="name" placeholder="Your full name" required><br>
+<label for="gender" class="zappy">Gender:</label>
+<input type="radio" id="gender" name="gender" value="male" required>Male
+<input type="radio" id="gender" name="gender" value="female" required>Female<br>
+<label for="age" class="zappy">Age:</label>
+<input type="number" min="0" max="99" step="1" value="18" id="age" name="age" required><br>
+<label for="birth" class="zappy">Date of birth:</label>
+<input type="date" id="birth" name="birth"><br>
+<label for="color" class="zappy">Favorite color:</label>
+<input type="color" id="color" name="color"><br>
+<label for="country" class="zappy">Which country:</label>
+<select name="countries">
+<option value="in">India</option>
+<option value="rs">Russia</option>
+<option value="cn">Canada</option>
+<option value="usa">United States of America</option>
+<option value="au">Australia</option>
+<option value="ns">No selection</option>
+</select>
+</fieldset><br>
+
+<fieldset class="casual">
+<legend>Your indicators</legend>
+<label for="height" class="zappy">Height:</label>
+Short<input type="range" min="0" max="100" step="5" value="50" id="height" name="height">Tall<br>
+<label for="salary" class="zappy">Salary:</label>
+Poor<input type="range" min="0" max="100" step="5" value="50" id="salary" name="salary">Rich<br>
+</fieldset><br>
+
+<fieldset class="casual">
+<legend>Your contact information</legend>
+<label for="email" class="zappy">Email:</label>
+<input type="email" id="email" name="email" required><br>
+<label for="mobile" class="zappy">Mobile:</label>
+<input type="tel" id="mobile" name="mobile"><br>
+<label for="address" class="zappy">Address:</label>
+<textarea rows="3" cols="60" id="address" name="address"></textarea><br>
+<label for="contact" class="zappy">Method to contact you:</label>
+<input type="checkbox" id="contact" name="contact" value="email">Email
+<input type="checkbox" id="contact" name="contact" value="whatsapp">Whatsapp
+<input type="checkbox" id="contact" name="contact" value="in-app chat">In-app chat<br>
+</fieldset><br>
+
+<input type="Submit" value="Submit">
+</form>
+<script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+
+
+</body>
+</html>
+
+
+
+
